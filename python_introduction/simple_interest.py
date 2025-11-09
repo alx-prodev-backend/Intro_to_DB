@@ -17,3 +17,4 @@ interest = principal * rate * time
 
 # Print the result
 print(f"The simple interest is: {interest}")
+#Happy coding
