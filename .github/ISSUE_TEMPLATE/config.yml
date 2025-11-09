@@ -1,0 +1,27 @@
+# .github/ISSUE_TEMPLATE/config.yml
+blank_issues_enabled: false  # Disables the default empty issue option
+
+contact_links:
+  - name: 📘 Project Documentation
+    url: https://github.com/your-username/alx_be_python/wiki
+    about: Visit the project documentation for setup instructions and coding standards.
+
+  - name: 💬 Discussion Board
+    url: https://github.com/your-username/alx_be_python/discussions
+    about: For general questions or ideas — please use the Discussions tab.
+
+issue_template:
+  - name: 🐛 Bug Report
+    description: Report a reproducible bug or unexpected behavior.
+    labels: ["bug", "needs triage"]
+    file: bug_report.md
+
+  - name: ✨ Feature Request
+    description: Suggest a new idea, enhancement, or improvement.
+    labels: ["enhancement"]
+    file: feature_request.md
+
+  - name: 🧩 Task Template
+    description: Create a structured implementation task (for milestone or sprint).
+    labels: ["task"]
+    file: task_template.md
