@@ -1,0 +1,15 @@
+# .github/PULL_REQUEST_TEMPLATE/config.yml
+# Enables multiple PR templates with a selection menu
+
+pull_request_templates:
+  - name: 🧩 Default PR Template
+    description: Standard template for small changes, refactors, or documentation updates.
+    file: default.md
+
+  - name: 🐛 Bug Fix PR
+    description: Use this when submitting a fix for an issue or bug.
+    file: bugfix_pr.md
+
+  - name: ✨ Feature PR
+    description: Use this when adding a new feature or module.
+    file: feature_pr.md
