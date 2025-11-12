@@ -1,7 +1,7 @@
 #weather_advice.py
 
 # if statement
-weather = input("Pls tell us the weather is:\n sunny,\n rainy,\n or cold. ")
+weather = input("What's the weather like today? (sunny/rainy/cold):")
 if weather =="sunny":
     # Wear a t-shirt and sunglasses.
     print("Wear a t-shirt and sunglasses.")
