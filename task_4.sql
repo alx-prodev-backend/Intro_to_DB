@@ -13,3 +13,4 @@ FROM
 WHERE
     TABLE_SCHEMA = DATABASE()
     AND TABLE_NAME = 'Books';
+TABLE_SCHEMA = 'alx_book_store'
