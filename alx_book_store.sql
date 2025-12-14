@@ -14,7 +14,7 @@ author_name VARCHAR(215) NOT NULL
 
 
 -- BOOKS TABLE
-CREATE TABLE IF NOT EXISTS books (
+CREATE TABLE IF NOT EXISTS Books (
 book_id INT AUTO_INCREMENT PRIMARY KEY,
 title VARCHAR(130) NOT NULL,
 author_id INT,
@@ -28,7 +28,7 @@ ON DELETE SET NULL
 
 
 -- CUSTOMERS TABLE
-CREATE TABLE IF NOT EXISTS customers (
+CREATE TABLE IF NOT EXISTS Customers (
 customer_id INT PRIMARY KEY,
 customer_name VARCHAR(215) NOT NULL,
 email VARCHAR(215) NOT NULL,
@@ -37,29 +37,29 @@ address TEXT
 
 
 -- ORDERS TABLE
-CREATE TABLE IF NOT EXISTS orders (
+CREATE TABLE IF NOT EXISTS Orders (
 order_id INT AUTO_INCREMENT PRIMARY KEY,
 customer_id INT,
 order_date DATE,
 CONSTRAINT fk_orders_customer
 FOREIGN KEY (customer_id)
-REFERENCES customers(customer_id)
+REFERENCES Customers(customer_id)
 ON DELETE CASCADE
 );
 
 
 -- ORDER DETAILS TABLE
-CREATE TABLE IF NOT EXISTS order_details (
+CREATE TABLE IF NOT EXISTS Order_Details (
 orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
 order_id INT,
 book_id INT,
 quantity DOUBLE NOT NULL,
 CONSTRAINT fk_orderdetails_order
 FOREIGN KEY (order_id)
-REFERENCES orders(order_id)
+REFERENCES Orders(order_id)
 ON DELETE CASCADE,
 CONSTRAINT fk_orderdetails_book
 FOREIGN KEY (book_id)
-REFERENCES books(book_id)
+REFERENCES Books(book_id)
 ON DELETE CASCADE
 );
