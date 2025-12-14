@@ -7,7 +7,7 @@ USE alx_book_store;
 
 
 -- AUTHORS TABLE
-CREATE TABLE IF NOT EXISTS authors (
+CREATE TABLE IF NOT EXISTS Authors (
 author_id INT AUTO_INCREMENT PRIMARY KEY,
 author_name VARCHAR(215) NOT NULL
 );
@@ -22,7 +22,7 @@ price DOUBLE NOT NULL,
 publication_date DATE,
 CONSTRAINT fk_books_author
 FOREIGN KEY (author_id)
-REFERENCES authors(author_id)
+REFERENCES Authors(author_id)
 ON DELETE SET NULL
 );
 
